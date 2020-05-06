@@ -1,0 +1,38 @@
+{
+  "name": "easy-print",
+  "version": "1.0.0",
+  "description": "easy web print base hiprint",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "build:prod": "webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haru1990/easy-print.git"
+  },
+  "keywords": [
+    "easy",
+    "print"
+  ],
+  "author": "fangxu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haru1990/easy-print/issues"
+  },
+  "homepage": "https://github.com/Haru1990/easy-print#readme",
+  "dependencies": {
+    "jquery": "3.3.1",
+    "jsbarcode": "^3.11.0",
+    "qrcode": "^1.4.4",
+    "qrcodejs2": "0.0.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

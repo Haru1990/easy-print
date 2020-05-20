@@ -9,18 +9,18 @@ export default function hiwprint($) {
         var $element = this;
         var $iframe = $('<iframe id="hiwprint_iframe"  style="visibility: hidden; height: 0; width: 0; position: absolute;"></iframe>');
         var css = '';
-        if (opt.importCss) {
-            if ($("link[media=print]").length > 0) {
-                $("link[media=print]").each(function () {
-                    css += '<link rel="stylesheet" type="text/css" media="print" href="' + $(this).attr("href") + '">';
-                });
-            }
-            else {
-                $("link").each(function () {
-                    css += '<link rel="stylesheet" type="text/css" media="print" href="' + $(this).attr("href") + '">';
-                });
-            }
-        }
+        // if (opt.importCss) {
+        //     if ($("link[media=print]").length > 0) {
+        //         $("link[media=print]").each(function () {
+        //             css += '<link rel="stylesheet" type="text/css" media="print" href="' + $(this).attr("href") + '">';
+        //         });
+        //     }
+        //     else {
+        //         $("link").each(function () {
+        //             css += '<link rel="stylesheet" type="text/css" media="print" href="' + $(this).attr("href") + '">';
+        //         });
+        //     }
+        // }
         css += '<style type="text/css" media="print">' + hiprintCss + '"</style>';
         css += '<style type="text/css" media="print">' + printLockCss + '"</style>';
         

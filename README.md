@@ -24,7 +24,7 @@ const hiprintTemplate = new hiprint.PrintTemplate({ template: panel });
 推荐使用的业务Print组件结构  
 |-----Print  
 |--------index.js    
-|--------adapter.js 
+|--------adapter.js  
 |--------panel.js
 
 文件介绍：

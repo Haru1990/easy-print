@@ -2,9 +2,9 @@ import React from 'react';
 import hiprint from "easy-print";
 
 import orderPandel from './panel';
-import COD from './cod.jpg';
+import CODImg from './cod.jpg';
 
-const { useState, useRef } = React;
+const { useState, useEffect, useImperativeHandle } = React;
 
 const hiprintTemplate = new hiprint.PrintTemplate({ template: orderPandel });
 
@@ -25,7 +25,7 @@ const testData = new Array(10).fill({
   barcode: '51995314782232-0001',
   qrcode: '51995314782232-0001',
   remark: '备注',
-  cod: COD,
+  cod: CODImg,
   table: [
     { weight: '230', name: 'dfx' }
   ]

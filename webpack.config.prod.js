@@ -2,6 +2,8 @@ const path = require('path');
 // const nodeExternals = require('webpack-node-externals');
 const CopyPlugin = require('copy-webpack-plugin');
 
+process.env.NODE_ENV = 'production';
+
 module.exports = {
   entry: './index.js',
   mode: 'production',
@@ -17,11 +19,11 @@ module.exports = {
   ],
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   use: 'babel-loader',
-      //   exclude: /node_modules/
-      // },
+      {
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],

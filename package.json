@@ -25,7 +25,7 @@
   "dependencies": {
     "babel-loader": "^8.1.0",
     "babel-preset-sofa-react": "^0.1.2",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "jsbarcode": "^3.11.0",
     "qrcode": "^1.4.4",
     "qrcode.react": "^1.0.0",

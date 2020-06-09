@@ -47,3 +47,22 @@ const Demo = (() => {
 - panel.js  就是打印面板JSON对象。
 
 > 上面的详细例子见 `example` 文件夹。
+
+## 补充：reactDom 方式使用
+
+上述推荐使用的方式，是依赖 jQuery 生成的 dom 元素，在批量打印很多的时候可能会有性能问题。
+
+为解决该问题，提供新的 api `hiprint.getReactDom(panel, printData)`，不再 jQuery 生成 dom，而是使用 React 生成 dom，提高渲染速度。
+
+使用方式：
+```
+import React from 'react';
+import ReactDom from 'react-dom';
+import hiprint from 'easy-print';
+import panel from './panel.js';
+
+const printData = [];
+
+const reactDom = hiprint.getReactDom(panel, printData);
+ReactDom.render(reactDom, document.getElementById('test'));
+```

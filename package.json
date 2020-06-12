@@ -1,6 +1,6 @@
 {
   "name": "easy-print",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "easy web print base hiprint",
   "main": "dist/bundle.js",
   "scripts": {

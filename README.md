@@ -29,6 +29,7 @@ const hiprintTemplate = new hiprint.PrintTemplate({ template: panel });
 
 文件介绍：
 - Print 文件夹就是一个打印面板组件，使用方式如下：
+
 ```
 import React from 'React';
 import Print from './Print';
@@ -41,12 +42,13 @@ const Demo = (() => {
   );
 });
 ```
+
 其中printList是需要批量打印的原始业务数据。
 - index.js 就是这个面板打印的入口，提供预览页面以及调起浏览器打印的入口。
 - adapter.js 就是用来将<Print>组件接受的业务打印数据转换成我们面板所需要的打印数据。
 - panel.js  就是打印面板JSON对象。
 
-> 上面的详细例子见 `example` 文件夹。
+> 上面的详细例子见 `example` 文件夹。  
 
 ## 补充：reactDom 方式使用
 
@@ -55,6 +57,7 @@ const Demo = (() => {
 为解决该问题，提供新的 api `hiprint.getReactDom(panel, printData)`，不再 jQuery 生成 dom，而是使用 React 生成 dom，提高渲染速度。
 
 使用方式：
+
 ```
 import React from 'react';
 import ReactDom from 'react-dom';
